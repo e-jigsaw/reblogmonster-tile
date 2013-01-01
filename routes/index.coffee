@@ -30,7 +30,7 @@ exports.index = (req, res)->
 						output += "<notes>#{post.note_count}</notes>"
 						output += "</binding>"
 
-			output += "</visual></title>"
+			output += "</visual></tile>"
 			res.type "xml"
 			res.send output
 		)
