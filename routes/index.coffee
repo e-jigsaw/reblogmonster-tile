@@ -10,7 +10,6 @@ exports.index = (req, res)->
 		).on("end", ->
 			json = JSON.parse data
 			output = "<tile><visual>"
-			console.log json
 			for post in json.response.posts
 				if post.type is "photo" or post.type is "text" or post.type is "quote"
 					if post.type is "photo"
